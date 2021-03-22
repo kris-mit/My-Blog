@@ -26,6 +26,9 @@ body {
   line-height: 1;
   background-color: #edf4f8; }
 
+p {
+  font-size: 18px; }
+
 ol, ul {
   list-style: none; }
 
@@ -461,7 +464,7 @@ a {
         box-shadow: 0px 15px 20px 10px #cccccc1e; }
       .blog .posts__inner__description {
         margin-bottom: 40px;
-        color: rgba(0, 0, 0, 0.555);
+        color: rgba(0, 0, 0, 0.75);
         line-height: 24px;
         font-weight: 300; }
     .blog .posts__btns {
@@ -479,6 +482,8 @@ a {
       flex-basis: 30%; } }
 
 @media screen and (max-width: 1000px) {
+  body {
+    background-color: #e2edf4; }
   .header .container {
     width: 90%; }
     .header .container .container__search {

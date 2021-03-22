@@ -384,7 +384,7 @@
 
                 &__description {
                     margin-bottom: 40px;
-                    color: rgba(0, 0, 0, 0.555); line-height: 24px; font-weight: 300;
+                    color: rgba(0, 0, 0, 0.75); line-height: 24px; font-weight: 300;
                 }
             }
 
@@ -412,6 +412,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+    body {
+        background-color: #e2edf4;
+    }
     .header {
         .container {
             width: 90%;
@@ -488,7 +491,7 @@
             figure {
                 flex-shrink: 0;
                 margin-bottom: 3px;
-                
+
                 &:first-child {border-top-left-radius: 0; border-bottom-left-radius: 0;}
 
                 &:last-child {border-top-right-radius: 0; border-bottom-right-radius: 0;}
