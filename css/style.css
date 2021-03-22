@@ -444,7 +444,7 @@ a {
           .blog .posts__inner__imgs figure.more {
             position: relative; }
             .blog .posts__inner__imgs figure.more:after {
-              content: '5';
+              content: '+5';
               display: flex;
               align-items: center;
               justify-content: center;
@@ -544,7 +544,8 @@ a {
     .blog .posts__inner__imgs {
       flex-wrap: wrap; }
       .blog .posts__inner__imgs figure {
-        flex-shrink: 0; }
+        flex-shrink: 0;
+        margin-bottom: 3px; }
         .blog .posts__inner__imgs figure:first-child {
           border-top-left-radius: 0;
           border-bottom-left-radius: 0; }
