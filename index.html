@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>My Blog</title>
+    <link rel="icon" type="image/jpg" href="./images/favicon.png"/>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container container--top">
+            <div class="container__main">
+                <a href="#" class="logo"><img src="images/my-blog-logo.svg" alt="Blog"></a>
+                <form>
+                    <img src="images/search-regular.svg" alt="Search" class="search-icon" />
+                    <input type="search" name="Search" placeholder="Search" value="" class="container__search" />
+                </form>
+            </div>
+            <nav>
+                <ul class="container__links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li class="profile"><a href="#"><img src="images/user-circle-regular.svg" alt="My Profile"><span>My Profile</span></a></li>
+                    <li class="logout"><a href="#"><img src="images/sign-out-regular.svg" alt="Sign Out"><span>Logout</span></a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header__menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </header>
+
+    <section class="modal">
+        <form class="modal__form">
+            <div class="modal__title">
+                <h3 class="modal__title__main">Add / Edit blog post</h3>
+                <span class="modal__exit modal__exit--popup"></span>
+            </div>
+            <div class="modal__space">
+                <label for="modal__title">Title <span class="required--input">*</span></label>
+                <input type="text" name="modal__title" id="modal__title" placeholder="Title of the post" value="" required />
+            </div>
+            <div class="modal__space">
+                <label for="modal__text">Text <span class="required--input">*</span></label>
+                <textarea name="modal__text" id="modal__text" rows="8" cols="50" placeholder="Text of the post" required ></textarea>
+            </div>
+            <div class="modal__buttons">
+                <button class="btn btn-post">Post</button>
+                <button class="btn modal__exit btn--cancel">Cancel</button>
+            </div>
+        </form>
+    </section>
+
+    <article class="container">
+        <div class="message">
+            <div class="message__box">
+                <h3>Container for showing application messages</h3>
+                <span class="message__box__exit"></span>
+            </div>
+        </div>
+
+        <h1 class="main__title">Welcome to My Blog</h1>
+        <button class="btn btn__message modal-window-btn">Add Post</button>
+   
+        <div class="blog">
+            <aside class="blog__categories">
+                <h2>Categories</h2>
+                <a href="#" class="active"><img src="./images/layer-group-regular.svg" alt="All Categories" /><span>All Categories</span></a>
+                <a href="#"><img src="./images/camera-retro-regular.svg" alt="Photography" /><span>Photography</span></a>
+                <a href="#"><img src="./images/books-regular.svg" alt="Literature" /><span>Literature</span></a>
+                <a href="#"><img src="./images/bags-shopping-regular.svg" alt="Shopping" /><span>Shopping</span></a>
+                <a href="#"><img src="./images/soup-regular.svg" alt="Cooking" /><span>Cooking</span></a>
+                <a href="#"><img src="./images/mountains-regular.svg" alt="Travel" /><span>Travel</span></a>
+            </aside>
+
+            <section class="posts">
+                <article class="posts__inner">
+                    <div class="posts__inner__element">
+                        <div class="post__box">
+                            <figure><img src="./images/avatar1.png" alt="Traveling" /></figure>
+                            <div class="post__box__content">
+                                <a><h4 class="truncate">The most beautiful places in the world</h4></a>
+                                <span class="post__date"><span>Posted date:</span> 21.03.2021 at 12:00,  by Sofia,  in Traveling</span>
+                            </div>
+                        </div>
+                        <div class="posts__btns">
+                            <button class="btn modal-window-btn btn--edit">Edit</button>
+                            <button class="btn btn--delete">Delete</button>
+                        </div>
+                    </div>
+    
+                    <p class="posts__inner__description truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque totam, iusto inventore asperiores odio dignissimos quis consequatur, laboriosam consequuntur, quas praesentium? Recusandae tempore, voluptatibus ipsum dolorum reprehenderit voluptatem voluptatum necessitatibus!</p>
+
+                    <div class="posts__inner__imgs">
+                        <figure><img src="./images/post1.png" alt="Traveling" /></figure>
+                        <figure><img src="./images/post2.png" alt="Traveling" /></figure>
+                        <figure><img src="./images/post3.png" alt="Traveling" /></figure>
+                    </div>
+                </article>
+    
+                <article class="posts__inner">
+                    <div class="posts__inner__element">
+                        <div class="post__box">
+                            <figure><img src="./images/avatar1.png" alt="Shopping" /></figure>
+                            <div class="post__box__content">
+                                <a><h4 class="truncate">The most beautiful places in the world</h4></a>
+                                <span class="post__date"><span>Posted date:</span> 11.02.2021 at 15:45,  by Sofia,  in Shopping</span>
+                            </div>
+                        </div>
+                        <div class="posts__btns">
+                            <button class="btn modal-window-btn btn--edit">Edit</button>
+                            <button class="btn btn--delete">Delete</button>
+                        </div>
+                    </div>
+    
+                    <p class="posts__inner__description truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque totam, iusto inventore asperiores odio dignissimos quis consequatur, laboriosam consequuntur, quas praesentium? Recusandae tempore, voluptatibus ipsum dolorum reprehenderit voluptatem voluptatum necessitatibus!</p>
+                    
+                    <div class="posts__inner__imgs">
+                        <figure><img src="./images/shopping1.jpg" alt="Shopping" /></figure>
+                        <figure><img src="./images/shopping2.jpg" alt="Shopping" /></figure>
+                        <figure><img src="./images/shopping3.jpg" alt="Shopping" /></figure>
+                        <figure><img src="./images/shopiing4.jpg" alt="Shopping" /></figure>
+                        <figure><img src="./images/shopping5.jpg" alt="Shopping" /></figure>
+                        <figure class="more"><img src="./images/shopping6.jpg" alt="Shopping" /></figure>
+                    </div>
+                </article>
+    
+                <article class="posts__inner">
+                    <div class="posts__inner__element">
+                        <div class="post__box">
+                            <figure><img src="./images/avatar1.png" alt="Cooking" /></figure>
+                            <div class="post__box__content">
+                                <a><h4 class="truncate">The most beautiful places in the world</h4></a>
+                                <span class="post__date"><span>Posted date:</span> 07.01.2021 at 19:05,  by Sofia,  in Cooking</span>
+                            </div>
+                        </div>
+                        <div class="posts__btns">
+                            <button class="btn modal-window-btn btn--edit">Edit</button>
+                            <button class="btn btn--delete">Delete</button>
+                        </div>
+                    </div>
+    
+                    <p class="posts__inner__description truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque totam, iusto inventore asperiores odio dignissimos quis consequatur, laboriosam consequuntur, quas praesentium? Recusandae tempore, voluptatibus ipsum dolorum reprehenderit voluptatem voluptatum necessitatibus!</p>
+                    
+                    <div class="posts__inner__imgs">
+                        <figure><img src="./images/cooking1.jpg" alt="Cooking" /></figure>
+                        <figure><img src="./images/cooking2.jpg" alt="Cooking" /></figure>
+                        <figure><img src="./images/cooking3.jpg" alt="Cooking" /></figure>
+                        <figure><img src="./images/cooking4.jpg" alt="Cooking" /></figure>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </article>
+
+    <script src="./js/modal-window.js"></script>
+</body>
+</html>
